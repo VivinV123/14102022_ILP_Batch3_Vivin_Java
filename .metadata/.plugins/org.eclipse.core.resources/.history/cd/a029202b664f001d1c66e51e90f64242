@@ -1,0 +1,7 @@
+package com.ilpexperion.entity;
+
+public class Account extends Product {
+	
+	private String accountType;
+
+}

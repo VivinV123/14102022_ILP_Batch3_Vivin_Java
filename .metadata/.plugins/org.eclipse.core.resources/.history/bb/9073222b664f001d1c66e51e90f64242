@@ -1,0 +1,8 @@
+package com.ilpexperion.entity;
+
+public class Product {
+	private String productCode;
+
+	private String productName;
+	private String productType;
+}

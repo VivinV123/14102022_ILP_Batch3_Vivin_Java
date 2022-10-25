@@ -1,0 +1,15 @@
+package com.ilpexperion.utility;
+
+import com.ilpexperion.entity.Account;
+
+public class ProductUtility {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Product product =new Product("Account"); Error cannot crearte
+		
+		Account account = new Account("Womens Saving Account","ACFG100044",10000);
+		
+}
+
+}

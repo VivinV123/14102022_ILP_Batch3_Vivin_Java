@@ -1,0 +1,86 @@
+package com.bank.utility;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.bank.entity.Account;
+import com.bank.entity.Customer;
+import com.bank.service.MisService;
+import com.bank.service.Service;
+
+public class BankUtility {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Account> accountList = new ArrayList<Account>();
+		Customer customer = null;
+		char choice;
+		do
+		{
+			System.out.println("******************Welcome To Bank************");
+			//System.out.println("1.Create Account 2.Deposit Money 3. Display Account Details 4.Withdraw Money \n Enter your Choice");
+			System.out.println("1.Create Account 2.Manage Account 3. Display Account 4. Exit");
+			int mainChoice = scanner.nextInt();
+			switch(mainChoice)
+			{
+				case 1: String customerAccountChoice = MisService.enterAccountChoice();
+						accountList.add(Service.createAccount(customerAccountChoice));
+						customer = Service.createCustomer(accountList);
+						System.out.println(customerAccountChoice+" Created for "+customer.getCustomerName());
+						System.out.println("Account is Active");
+						break;
+				case 2: System.out.println("*************Accounts Available*************");
+						System.out.println("Savings Max Account");
+						System.out.println("Current Account");
+						System.out.println("Loan Account");
+
+						System.out.println("1.Deposit Money  2.Withdraw Money 3.Display Account Details\n Enter your Choice");
+						int availableChoice = scanner.nextInt();
+						switch(availableChoice)
+						{
+							case 1: Service.depositMoney(customer);
+								break;
+							case 2: Service.withdrawAmount(customer);
+								break;
+							case 3: Service.displayAccountDetails(customer, accountList);
+								break;
+						}
+						break;
+				
+				case 3: System.out.println("Enter Customer Code : ");
+						String cusCode= scanner.nextLine();
+						Service.displayAccountDetails(customer, accountList);
+				
+						
+							if(customer.getCustomerCode().compareTo(cusCode)!=0)
+							{
+								
+								Service.displayAccountDetails(customer, accountList);
+								
+							}
+							else {
+								System.out.println("Customer Id not Available Create an Account");
+							}
+					
+					
+				break;
+				case 4: System.exit(0);
+				
+				
+			}
+			System.out.println("Do you want to continue(y/n) : - ");
+			choice = scanner.next().charAt(0);
+			
+		}
+		while(choice == 'y' || choice =='Y');
+		
+
+	}
+
+
+	
+	
+
+	
+
+}
