@@ -1,7 +1,0 @@
-package com.bank.entity;
-
-public class SavingsMaxAccount extends Account {
-	private balance;
-	
-
-}

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
-		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\ILPExperion\SharedDocumentsByOurGroup\Questions\Assignment_1"/>
 			<item value=""/>
 			<item value="D:\ILPExperion\SharedDocumentsBySuneesh\17102022\POJO\17102022_ILP_OOP_POJO"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="D:\ILPExperion\SharedDocumentsByOurGroup\Questions.zip"/>
 			<item value="D:\ILPExperion\SharedDocumentsByOurGroup\assignment (2).zip"/>
 			<item value="D:\ILPExperion\Project\assignment.zip"/>
 			<item value="D:\ILPExperion\SharedDocumentsByOurGroup\abstract.zip"/>
